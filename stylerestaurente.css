@@ -1,0 +1,79 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo do site */
+.body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f5f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+.header {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    margin-bottom: 5px;
+}
+
+/* Menu */
+.nav {
+    background-color: #b22222;
+    text-align: center;
+    padding: 10px;
+}
+
+.links-restaurante {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Imagem */
+.imagem {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.imagem img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Texto */
+.textos {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: justify;
+}
+
+.textos h2 {
+    margin-bottom: 15px;
+    color: #8B0000;
+}
+
+.textos p {
+    margin-bottom: 15px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #8B0000;
+    height: 50px;
+    margin-top: 20px;
+}
