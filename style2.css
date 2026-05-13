@@ -1,0 +1,105 @@
+/*Reset*/
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/*responsivo*/
+@media(max-width:600px){
+    .cardapio {
+        padding: 2px 10px; /*espaços em tela pequenas*/
+        .cardapio h2{
+        font-size: 16px;
+        }
+        .cardapio p{
+            font-size: 12px;
+        }
+    }
+}
+/*menu principal*/
+.menu{
+    display: flex;
+    justify-content: space-between;/*separa logo e menu*/
+    align-items: center;
+    background-color: #b8430042;
+    padding: 15px 30px;
+}
+/*logo*/
+.logo{
+    color:#b8430042;
+    font-size: 24px;
+    font-weight: bold;
+}
+/*lista*/
+.menu-links{
+    list-style: none;
+    display: flex;
+    gap: 25px; /*espaço entre os itens*/
+}
+.menu-links a{
+    text-decoration: none;
+    color: #b8430042;
+    font-size: 16px;
+    transition: 0.3s;
+} 
+.menu-links a :hover{
+    color: yellow;
+}
+/*barra alerta*/
+.barra-alerta{
+    background-color: red;
+    color: #eee;
+    text-align: center;
+    padding: 10px;
+    font-size: 14;
+}
+/*container*/
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5f5;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+.footer-logo h2{
+    color: red
+
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-links a{
+    text-decoration: none;
+    color: red; 
+    font-size: 14px;
+}
+.footer-links a :hover{
+    color: #4444
+}
+/*redes sociais*/
+.footer-redes{
+    display:flex;
+    gap: 15px;
+}
+.footer-redes a:hover{
+    text-decoration: none;
+    color red;
+    font-size: 14px;
+}
+.footer-redes a:hover{
+    color: #4444;
+}
+.cardapio{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.bloco{
+    display: grid;
+    grid-template-columns: 1fr 1fr;/*divide em duas partes*/
+    align-items: center;
+}
+.vermelho{
+    color: #d40000bd;
+}
