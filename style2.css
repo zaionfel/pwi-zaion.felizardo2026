@@ -85,7 +85,7 @@ box-sizing: border-box;
 }
 .footer-redes a:hover{
     text-decoration: none;
-    color red;
+    color: red;
     font-size: 14px;
 }
 .footer-redes a:hover{
@@ -102,4 +102,24 @@ box-sizing: border-box;
 }
 .vermelho{
     color: #d40000bd;
+    color: white;
+}
+.bege{
+    background-color: #d8c9a3;
+}
+.texto{
+    padding: 40px;
+}
+.texto h2{
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.texto p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+.imagem img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
 }
