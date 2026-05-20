@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Trattoria Bella Vita</title>
+    
+</head>
+<body>
+    <header>
+     <nav class="menu">
+        <h1 class="logo">Trattoria Bella Vita</h1>
+        <ul class="menu-links">
+<a href="index.html">Inicio</a>
+<a href="cardapio.html">Cardápio</a>
+<a href="nossaHistoria.html">Nossa História</a>
+<a href="localizacao.html">Localização</a>
+        </ul>
+    </nav>
+    </header>
+    <section class="contato">
+        <h1>Agende sua reserva</h1>
+        <!--Formulário-->
+        <form id="formReserva">
+            <!--nome-->
+            <label>Nome</label>
+            <input type="text" id="nome">
+
+            <!--email-->
+            <label>Email</label>
+            <input type="email" id="email">
+                        
+            <!--whatsapp-->
+            <label>Whatsapp</label>
+            <input type="tel" id="whatsapp">
+
+            <!--data-->
+            <label>Data</label>
+            <input type="date" id="data">
+
+            <!--horario-->
+            <label>Horario</label>
+            <input type="time" id="horario">
+
+            <!--observações-->
+            <label>Observações</label>
+            <textarea id="mensagem" placeholder="Exemplo: Nome João, Quantidade de pessoas:4, Mesa Próxima a Janela."></textarea>
+
+            <!--botão-->
+            <button type="submit">Agendar Reserva</button>
+
+        </form>
+
+        <!--mensagem-->
+        <p id="resultado"></p>
+    </section>
+    <!--concta com javascript-->
+    <script src="script.js"></script>
+    <footer><!--Rodapé-->
+            <!--Barra vermelha-->
+            <div class="barra-alerta">
+                <p>SE BEBER, NÃO DIRIJA!</p>
+            </div>
+            <!--Conteudo principal do rodape-->
+            <div class="footer-container">
+                <!--Logo-->
+                <div class="footer-logo">
+                    <h2>Trattoria Bella</h2>
+                </div>
+                <!--Link do site-->
+                <div class="footer-link">
+                    <a href="28-04-06.html">Inicio</a>
+                    <a href="cardapio.html">Cardapio</a>
+                    <a href="nossaHistoria.html">Nossa História</a>
+                    <a href="localizacao.html">Localização</a>
+                </div>
+                <!--Redes sociais-->
+                <div class="footer-redes">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">TikTok</a>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

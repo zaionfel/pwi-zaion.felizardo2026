@@ -1,125 +1,181 @@
-/*Reset*/
-*{margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-/*responsivo*/
-@media(max-width:600px){
-    .cardapio {
-        padding: 2px 10px; /*espaços em tela pequenas*/
-        .cardapio h2{
+/*Reset. tira margem*/
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+    /*Menu principal*/
+    .menu{
+        display: flex;
+        justify-content: space-between; /*separa logo e menu*/
+        align-items: center;
+        background-color: goldenrod;
+        padding: 15px 30px;
+    }
+    /*Logo*/
+    .logo{
+        color: darkred;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    /*Lista*/
+    .menu-links{
+        list-style: none;
+        display: flex;
+        gap: 25px;/*espaço entre os itens*/
+    }
+    /*Link*/
+    .menu-links a{
+        text-decoration: none;
+        color: black;
         font-size: 16px;
+        transition: 0.3s;
+    }
+    /*Hover (efeito ao passar o mouse)*/
+    .menu-links a:hover{
+        color: goldenrod;
+    }
+    /*Item ativo (Inicio)*/
+    .menu-links .ativo{
+        color: goldenrod;
+        font-weight:bold ;
+    }
+    
+    /*contato*/
+    .contato{
+    max-width:600px;
+    margin: 50px auto;
+    background-color: #222;
+    padding: 30px;
+    border-radius: 10px;
+    color:white;
+    }
+    .contato h1{
+        text-align: center;
+        margin-bottom: 30px;
+        color: #a8001c;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    /*input*/
+    input, text{
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    textarea{
+        height: 120px;
+        resize: none;
+    }
+    /*botão*/
+    button{
+        background-color: #c40024;
+        color: white;
+        border: none;
+        padding: 15px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    button:hover{
+        background-color: #ff0033;
+    }
+    #resultado{
+        margin-top: 20px;
+        text-align: center;
+        font-weight: bold;
+        
+    }
+    
+    /*footer*/
+    /*barra vermelha superior*/
+    .barra-alerta{
+        background-color: #a8001c;
+        color: whitesmoke;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .contato{
+        background-color: beige;
+        color: #a8001c;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    .contato h1{
+        font-size: 28px;
+        color: #a8001c;
+        margin-bottom: 20px;
+    }
+    .info-contato{
+        margin-bottom: 30px;
+    }
+    .info-contato p{
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    /*mapa*/
+    .mapa iframe{
+        width: 80%; /*ocupa 80% da largura*/
+        height: 400px; /*altura do mapa*/
+        border: 0; /*remove borda*/
+    }
+    /*responsivo*/
+    @media(max-width:600px){
+        .contato{
+            padding: 20px 10px; /*espaço em telas pequenas*/
         }
-        .cardapio p{
-            font-size: 12px;
+        .contato h1{
+            font-size: 20px;
+        }
+        .contato p{
+            font-size: 14px;
+        }
+        .mapa iframe{
+            width: 100%;
+            height: 300px;
         }
     }
-}
-/*menu principal*/
-.menu{
-    display: flex;
-    justify-content: space-between;/*separa logo e menu*/
-    align-items: center;
-    background-color: #b8430042;
-    padding: 15px 30px;
-}
-/*logo*/
-.logo{
-    color:#b8430042;
-    font-size: 24px;
-    font-weight: bold;
-}
-/*lista*/
-.menu-links{
-    list-style: none;
-    display: flex;
-    gap: 25px; /*espaço entre os itens*/
-}
-.menu-links a{
-    text-decoration: none;
-    color: #b8430042;
-    font-size: 16px;
-    transition: 0.3s;
-} 
-.menu-links a :hover{
-    color: yellow;
-}
-/*barra alerta*/
-.barra-alerta{
-    background-color: red;
-    color: #eee;
-    text-align: center;
-    padding: 10px;
-    font-size: 14;
-}
-/*container*/
-.footer-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f5f5f5f5;
-    padding: 30px;
-    flex-wrap: wrap;
-}
-.footer-logo h2{
-    color: red
-
-}
-.footer-links{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.footer-links a{
-    text-decoration: none;
-    color: red; 
-    font-size: 14px;
-}
-.footer-links a :hover{
-    color: #4444
-}
-/*redes sociais*/
-.footer-redes{
-    display:flex;
-    gap: 15px;
-}
-.footer-redes a:hover{
-    text-decoration: none;
-    color: red;
-    font-size: 14px;
-}
-.footer-redes a:hover{
-    color: #4444;
-}
-.cardapio{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-.bloco{
-    display: grid;
-    grid-template-columns: 1fr 1fr;/*divide em duas partes*/
-    align-items: center;
-}
-.vermelho{
-    color: #d40000bd;
-    color: white;
-}
-.bege{
-    background-color: #d8c9a3;
-}
-.texto{
-    padding: 40px;
-}
-.texto h2{
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-.texto p{
-    font-size: 14px;
-    line-height: 1.5;
-}
-.imagem img{
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-}
+    /*container principal do footer*/
+    .footer-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: darkgoldenrod;
+        padding: 30px;
+        flex-wrap: wrap;
+    }
+    /*logo*/
+    .footer-logo h2{
+        color: brown;
+    }
+    /*link do site*/
+    .footer-link{
+        display: flex;
+        gap: 10px;
+    }
+    .footer-link a{
+        text-decoration: none;
+        color: #444;
+        font-size: 14px;
+    }
+    .footer-link a:hover{
+        color: #a8001c;
+    }
+    /*redes sociais*/
+    .footer-redes{
+        display: flex;
+        gap: 25px;
+    }
+    .footer-redes a{
+        text-decoration: none;
+        color: #444;
+        font-size: 14px;
+    }
+    .footer-redes a:hover{
+        color: #a8001c;
+    }
