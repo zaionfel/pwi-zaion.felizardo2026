@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login com Matriz</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 50px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+        button { padding: 8px 15px; cursor: pointer; }
+        #mensagem { margin-top: 15px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h2>Área de Login</h2>
+    
+    <div class="form-group">
+        <label for="usuario">Usuário:</label>
+        <input type="text" id="usuario" placeholder="Digite seu usuário">
+    </div>
+
+    <div class="form-group">
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" placeholder="Digite sua senha">
+    </div>
+
+    <button onclick="efetuarLogin()">Entrar</button>
+
+    <div id="mensagem"></div>
+
+    <script src="script2.js"></script>
+</body>
+</html>

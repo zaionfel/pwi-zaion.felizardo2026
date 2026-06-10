@@ -1,0 +1,77 @@
+/* Configuração geral do fundo e texto */
+body {
+    background-color: #222;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Caixa centralizada do formulário */
+.container {
+    width: 400px;
+    margin: 100px auto;
+    background-color: #333;
+    padding: 30px;
+    border-radius: 10px; /* Arredonda as bordas da caixa */
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+}
+
+/* Estilização dos blocos de input */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left; /* Deixa os labels alinhados à esquerda */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+/* Estilização dos campos de digitação (Usuário e Senha) */
+input[type="text"], 
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; /* Evita que o input passe do tamanho da caixa */
+    border: 1px solid #555;
+    background-color: #444;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Foco nos inputs ao clicar */
+input:focus {
+    outline: none;
+}
+
+/* O botão de entrar */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s; /* Deixa o efeito de hover suave */
+}
+
+/* Efeito ao passar o mouse no botão */
+button:hover {
+    background-color: red;
+}
+
+/* Div onde a mensagem de sucesso/erro aparece */
+#mensagem {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+}
